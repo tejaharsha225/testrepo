@@ -30,11 +30,19 @@
 
 	</dependencies>
 	<distributionManagement>
-		<repository>
-		    <id>nexus</id>
-		    <url>http://54.197.176.59:8081/repository/myapp-release/</url>
-		</repository>
-  	</distributionManagement>
+	 <repository>
+		<id>demo</id>
+		<name>demo</name>
+		<url>http://3.137.207.154:8081/nexus/content/repositories/demoR/</url>
+	  </repository>
+	  <snapshotRepository>
+		<id>demo_sp</id>
+		<name>demo_sp</name>
+		<url>http://3.137.207.154:8081/nexus/content/repositories/demo_sp/</url>
+	  </snapshotRepository>
+	</distributionManagement>
+
+
 	
 <build>
     <plugins>
